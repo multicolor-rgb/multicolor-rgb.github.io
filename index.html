@@ -41,7 +41,7 @@ z-index: 1;
  
 
 .header__content{
-    position:fixed;
+    position:absolute;
     z-index: 2;
 }
 
@@ -80,8 +80,39 @@ a:hover{
 }
 
 section{
-    padding:50px 15px;
+    padding:150px 15px;
 }
+
+.wrapper{
+    width:80%;
+    margin:0 auto;
+}
+
+ul{
+    margin: 0;
+    margin-top:20px;
+    margin-left: 15px;
+    padding: 0;
+    list-style-type: square;
+}
+
+li{
+    padding: 10px 0;
+border-bottom: dashed 1px #ddd;
+}
+
+section a{
+    color:#3d0c5f;
+}
+
+section a:hover{
+    color:#3d0c5f;
+}
+
+.muted{
+    color:rgba(0,0,0,0.8);
+}
+
     </style>
 
 </head>
@@ -102,9 +133,27 @@ section{
 
     </header>
 
-
     
+    <section>
+        
+       <div class="wrapper">
+        <h3>What changed on first version Community Edition?</h3>
+ 
+    <p class="muted">Produced: 3/10/2022 5:35:12 PM  </p>
+      <b>  Notes:</b>
+        <ul>
+        <li>Fix error message (empty log file) #1312 (<a href="https://github.com/GetSimpleCMS/GetSimpleCMS/pull/1312">https://github.com/GetSimpleCMS/GetSimpleCMS/pull/1312</a>)</li>
+        <li>Add .webp support for GetSimple CMS #1350 (<a href="https://github.com/GetSimpleCMS/GetSimpleCMS/pull/1350">https://github.com/GetSimpleCMS/GetSimpleCMS/pull/1350</a>)
+        <li>Further 8.x compatibility from <a href="http://get-simple.info/forums/showthread.php?tid=16548&pid=73027">Topic with fixes</a></li>
+        </ul>
+        
+        
+       </div>
 
+
+    </section>
+
+ 
 
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js   "></script>
 <script>
